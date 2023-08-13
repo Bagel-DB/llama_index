@@ -75,7 +75,12 @@ class BagelReader(BaseReader):
         Returns: None
         """
 
-        import bagel
+        try:
+            import bagel
+        except ImportError:
+            raise ImportError(
+                "`bagel` package not found, please run `pip install bagel`"
+            )
         from bagel.config import Settings
 
         if not collection_name:

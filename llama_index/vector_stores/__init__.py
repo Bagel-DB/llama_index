@@ -24,6 +24,7 @@ from llama_index.vector_stores.docarray import (
     DocArrayHnswVectorStore,
     DocArrayInMemoryVectorStore,
 )
+from llama_index.vector_stores.bagel import BagelVectorStore
 
 __all__ = [
     "SimpleVectorStore",
@@ -46,4 +47,5 @@ __all__ = [
     "DocArrayHnswVectorStore",
     "SupabaseVectorStore",
     "PGVectorStore",
+    "BagelVectorStore",
 ]
